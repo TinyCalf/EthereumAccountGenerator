@@ -1,0 +1,16 @@
+{
+  "name": "ethereumaccountgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "author": "TinyCalf",
+  "license": "ISC",
+  "dependencies": {
+    "bip39": "^2.5.0",
+    "ethereumjs-wallet": "^0.6.0",
+    "express": "^4.16.3"
+  }
+}
