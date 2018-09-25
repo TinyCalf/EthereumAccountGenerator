@@ -39,18 +39,17 @@ app.use(bodyParser.json())
 
 app.get("/", (req, res) => {
   let	account = generate()
-  res.send(
-  `
-	助记词：${account.mnemonic}
-	衍生路径： ${account.path}
-	私钥：${account.prikey}
-	普通地址：${account.address}
-	校验地址：${account.checkedsum}
-
-  助记词+衍生路径 相当于 私钥,请妥善保存
-
-	`) 
+  res.send({
+    err:0,
+    msg:{
+      mnemonic: account.mnemonic,
+      path: account.path,
+      prikey: account.prikey,
+      address: account.address,
+      checksum: account.checkedsum
+    }
+  })
 })
 
 app.listen(3333)
-console.log("Ethereum Account Generateor listening on 3333")
+console.log("Ethereum Account Generateor listening on 10010")

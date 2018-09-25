@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "ls"
+    "test": "ls",
+    "start": "node index.js"
   },
   "author": "TinyCalf",
   "license": "ISC",
