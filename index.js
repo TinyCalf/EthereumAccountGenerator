@@ -37,7 +37,7 @@ app.all('*', function(req, res, next) {
 
 app.use(bodyParser.json())
 
-app.get("/", (req, res) => {
+app.get("/tools/newwallet", (req, res) => {
   let	account = generate()
   res.send({
     err:0,
@@ -51,5 +51,5 @@ app.get("/", (req, res) => {
   })
 })
 
-app.listen(3333)
+app.listen(10010)
 console.log("Ethereum Account Generateor listening on 10010")
